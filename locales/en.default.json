@@ -69,6 +69,7 @@
         "bank_card_cvv_required_message": "Please enter verification code of your bank card",
         "invalid_bank_card_cvv_message": "Please enter correct verification code of your bank card",
         "order_successfully": "Order <strong class=\"text-uppercase\" >{{ number }}</strong> has successfully been submitted. You will be sent an email notification as soon as your order is ready.",
+        "order_workflow": "Your order has been sent for approval. You can complete your order any time later.",
         "order-print": "Print order",
         "order-summary": "Order summary",
         "pickup-address": "Pickup address",

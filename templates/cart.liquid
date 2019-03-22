@@ -281,7 +281,10 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <div class="row">
-                                        <div class="col-md-9"><p><span><i class="fa fa-check-circle fa-2x text-middle success" aria-hidden="true"></i></span> Order<span ng-bind="checkout.order.number"></span> {{ 'checkout.order_successfully' | t: number: number }}</p></div>
+                                        <div class="col-md-9">
+                                            <p ng-if="checkout.order.workflowId"><span><i class="fa fa-check-circle fa-2x text-middle success" aria-hidden="true"></i></span> {{ 'checkout.order_workflow' | t }}</p>
+                                            <p ng-if="!checkout.order.workflowId"><span><i class="fa fa-check-circle fa-2x text-middle success" aria-hidden="true"></i></span> Order<span ng-bind="checkout.order.number"></span> {{ 'checkout.order_successfully' | t: number: number }}</p>
+                                        </div>
                                         <div class="col-md-3">
                                             <div class="btn-group pull-right" role="group">
                                                 <button type="button" class="btn btn-default" ng-click="getInvoicePdf()"><p> {{ 'checkout.order-print' | t }}</p></button>
